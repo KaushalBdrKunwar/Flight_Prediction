@@ -138,4 +138,4 @@ Feature Selection: Explore other feature selection techniques to improve model p
 
 Other Algorithms: Experiment with other regression algorithms such as Gradient Boosting, XGBoost, or Neural Networks.
 
-Deployment: Deploy the model as a web application or API for real-time predictions
+Deployment: Deploy the model as a web application or API for real-time predictions.
