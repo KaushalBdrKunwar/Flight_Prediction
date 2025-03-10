@@ -1,8 +1,8 @@
-#Flight Price Prediction:
+# Flight Price Prediction:
 
 This project aims to predict flight prices using a dataset containing various features related to flights. The project involves data cleaning, exploratory data analysis, feature engineering, and machine learning model building. The final model is a RandomForestRegressor, which is used to predict flight prices based on the given features.
 
-#Table of Contents
+# Table of Contents
 1.Introduction
 
 2.Dataset
@@ -23,10 +23,10 @@ This project aims to predict flight prices using a dataset containing various fe
 
 10.Future Work
 
-#Introduction
+# Introduction
 Predicting flight prices is a common problem in the travel industry. This project uses a dataset containing various features such as airline, source, destination, departure time, arrival time, duration, and more. The goal is to build a machine learning model that can accurately predict flight prices based on these features.
 
-#Dataset
+# Dataset
 The dataset used in this project is flightdata.csv, which contains the following columns:
 
 Airline: The name of the airline.
@@ -51,7 +51,7 @@ Additional_Info: Additional information about the flight.
 
 Price: The price of the flight (target variable).
 
-#Data Cleaning
+# Data Cleaning
 The data cleaning process involves handling missing values, converting data types, and extracting useful features from the existing columns. The following steps were taken:
 
 Handling missing values by dropping rows with missing data.
@@ -64,7 +64,7 @@ Extracting hour and minute from the Dep_Time and Arrival_Time columns.
 
 Preprocessing the Duration column to extract hours and minutes.
 
-#Exploratory Data Analysis (EDA)
+# Exploratory Data Analysis (EDA)
 The EDA process involves analyzing the data to understand the distribution of flight prices, the relationship between different features, and identifying any outliers. The following analyses were performed:
 
 Analyzing the distribution of flight prices.
@@ -75,7 +75,7 @@ Analyzing the most common departure times.
 
 Visualizing the distribution of flight prices using histograms and box plots.
 
-#Feature Engineering
+# Feature Engineering
 Feature engineering involves creating new features from the existing data to improve the performance of the machine learning model. The following steps were taken:
 
 Encoding categorical variables using One-Hot Encoding and Target Guided Encoding.
@@ -84,7 +84,7 @@ Removing irrelevant columns such as Additional_Info, Route, and Date_of_Journey.
 
 Handling outliers in the Price column using the Interquartile Range (IQR) method.
 
-#Model Building
+# Model Building
 The machine learning model used in this project is a RandomForestRegressor. The following steps were taken to build and evaluate the model:
 
 Splitting the data into training and testing sets.
@@ -95,7 +95,7 @@ Making predictions on the test data.
 
 Evaluating the model using metrics such as R2 score, Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and Mean Absolute Percentage Error (MAPE).
 
-#Model Evaluation
+# Model Evaluation
 The model was evaluated using the following metrics:
 
 R2 Score: 0.81
@@ -110,7 +110,7 @@ MAPE: 13.17%
 
 The model achieved an R2 score of 0.81, indicating that it explains 81% of the variance in the flight prices.
 
-#Model Deployment
+# Model Deployment
 The final model was saved using the pickle library for future use. The model can be loaded and used to make predictions on new data.
 
 python
