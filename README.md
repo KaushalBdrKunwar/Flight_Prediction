@@ -117,20 +117,21 @@ python
 Copy
 import pickle
 
-# Save the model
+Save the model
 file = open('rf_random.pkl', 'wb')
 pickle.dump(ml_model, file)
 
-# Load the model
+Load the model
 model = open('rf_random.pkl', 'rb')
 forest = pickle.load(model)
 
-# Make predictions
+Make predictions
 y_pred2 = forest.predict(X_test)
-Conclusion
+
+# Conclusion
 This project successfully built a machine learning model to predict flight prices with an R2 score of 0.81. The model can be further improved by tuning hyperparameters and exploring other machine learning algorithms.
 
-Future Work
+# Future Work
 Hyperparameter Tuning: Use techniques like RandomizedSearchCV or GridSearchCV to find the best hyperparameters for the RandomForestRegressor.
 
 Feature Selection: Explore other feature selection techniques to improve model performance.
